@@ -1,15 +1,36 @@
 # Site Settings
-site_name: 微风拂过之处
+site_name: 无垠星空
 site_url: https://liuyihao.github.io/
 site_author: 刘怡豪
 
 # Document Settings
 nav:
   - 主页: 'index.md'
+  - 小工具: 
+    - 抽签: 'tools/draw.md'
+    - 今天吃什么食堂: 'tools/tsinghua_draw.md'
 
 # Theme Settings
 theme:
   name: material
   language: zh
   custom_dir: custom_theme/
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
