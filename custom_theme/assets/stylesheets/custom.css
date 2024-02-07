@@ -1,0 +1,51 @@
+/* Draw Tools */
+.draw-input-group {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 24em;
+}
+
+.draw-input-item {
+    flex: 5;
+    border: 1px #333 solid;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.draw-button {
+    flex: 1;
+    padding: 4px 15px;
+    color: #409eff;
+    background: #ecf5ff;
+    border: 1px #a0cfff solid;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.25s, background-color 0.25s, border-color 0.25s;
+}
+
+.draw-button:hover {
+    color: #ffffff;
+    background: #409eff;
+    border: 1px #409eff solid;
+}
+
+.draw-button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.draw-delete-button {
+    position: relative;
+    top: 2.5px;
+    margin-left: 20px;
+    width: 16px;
+}
+
+.draw-items {
+    padding: 1px;
+}
+
+.draw-drawn {
+    background-color: #a0cfffb0;
+    transition: background-color 0.05s;
+}

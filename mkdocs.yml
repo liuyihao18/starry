@@ -1,6 +1,6 @@
 # Site Settings
-site_name: 无垠星空
-site_url: https://liuyihao.github.io/
+site_name: 微风拂过之处
+site_url: https://liuyihao.github.io/starry/
 site_author: 刘怡豪
 
 # Document Settings
@@ -15,8 +15,8 @@ theme:
   name: material
   language: zh
   custom_dir: custom_theme/
+  # Color
   palette:
-    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: light blue
@@ -24,8 +24,6 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: deep purple
@@ -33,4 +31,10 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  # Logo and Icon
+  logo: assets/images/sun.svg
+  favicon: assets/images/favicon.ico
+  extra:
+    homepage: https://www.liuyihao.top
+
 
