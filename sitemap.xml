@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://liuyihao.github.io/</loc>
-         <lastmod>2024-02-06</lastmod>
+         <loc>https://liuyihao.github.io/starry/</loc>
+         <lastmod>2024-02-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://liuyihao.github.io/tools/draw/</loc>
-         <lastmod>2024-02-06</lastmod>
+         <loc>https://liuyihao.github.io/starry/tools/draw/</loc>
+         <lastmod>2024-02-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://liuyihao.github.io/tools/tsinghua_draw/</loc>
-         <lastmod>2024-02-06</lastmod>
+         <loc>https://liuyihao.github.io/starry/tools/tsinghua_draw/</loc>
+         <lastmod>2024-02-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -10,7 +10,7 @@
         <meta name="author" content="刘怡豪">
       
       
-        <link rel="canonical" href="https://liuyihao.github.io/tools/draw/">
+        <link rel="canonical" href="https://liuyihao.github.io/starry/tools/draw/">
       
       
         <link rel="prev" href="../..">
@@ -19,12 +19,12 @@
         <link rel="next" href="../tsinghua_draw/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.7">
     
     
       
-        <title>抽签 - 无垠星空</title>
+        <title>抽签 - 微风拂过之处</title>
       
     
     
@@ -38,8 +38,12 @@
 
     
     
+
       
     
+<link rel="stylesheet" href="../../assets/stylesheets/custom.css">
+<script src="../../assets/javascripts/vue.global.prod.js"></script>
+
     
       
         
@@ -87,10 +91,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../.." title="无垠星空" class="md-header__button md-logo" aria-label="无垠星空" data-md-component="logo">
+    <a href="../.." title="微风拂过之处" class="md-header__button md-logo" aria-label="微风拂过之处" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../../assets/images/sun.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -101,7 +104,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            无垠星空
+            微风拂过之处
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -208,13 +211,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="无垠星空" class="md-nav__button md-logo" aria-label="无垠星空" data-md-component="logo">
+    <a href="../.." title="微风拂过之处" class="md-nav__button md-logo" aria-label="微风拂过之处" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../../assets/images/sun.svg" alt="logo">
 
     </a>
-    无垠星空
+    微风拂过之处
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -369,6 +371,72 @@
   <h1>抽签</h1>
 
 <p>这是一个可以自定义选项的抽签小工具，请随意使用！</p>
+<div id="app">
+    <div class="draw-input-group">
+        <input class="draw-input-item" v-model="inputValue" type="text"/>
+        <button class="draw-button" @click="addItem">添加</button>
+        <button class="draw-button" @click="draw">抽签</button>
+    </div>
+    <ul>
+        <li v-for="(item, index) in items">
+            <span :class="index === drawnIndex ? 'draw-items draw-drawn' : 'draw-items'">
+                {{ item }}
+            </span>
+             <button class="draw-delete-button" :data-index="index" @click="deleteItem"><img src='../../assets/images/delete.svg' alt='delete'></button>
+        </li>
+        <li hidden>
+            <span class="draw-items draw-drawn" hidden>
+
+            </span>
+        </li>
+    </ul>
+</div>
+
+<script>
+    const {createApp} = Vue
+
+    createApp({
+        data() {
+            return {
+                inputValue: '',
+                items: [],
+                drawnIndex: -1,
+                isDrawing: false
+            }
+        },
+        methods: {
+            addItem() {
+                if (!this.isDrawing && this.inputValue !== '') {
+                    this.items.push(this.inputValue)
+                }
+            },
+            deleteItem(e) {
+                this.items.splice(e.target.dataset.index, 1)
+            },
+            draw() {
+                if (this.items.length < 1) {
+                    alert('请添加抽签选项！')
+                    return
+                }
+                this.isDrawing = true
+                let randomIndex = Math.floor(Math.random() * this.items.length) * 3 + 1
+                const fn = () => {
+                    if (randomIndex > 0) {
+                        this.drawnIndex = (this.drawnIndex + 1) % this.items.length
+                        randomIndex--
+                        setTimeout(fn, 200)
+                    } else {
+                        setTimeout(() => {
+                            alert('抽中了：' + this.items[this.drawnIndex])
+                            this.isDrawing = false
+                        }, 200)
+                    }
+                }
+                fn()
+            }
+        }
+    }).mount('#app')
+</script>
 
 
 
