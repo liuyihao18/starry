@@ -11,7 +11,7 @@
             <span :class="index === drawnIndex ? 'draw-items draw-drawn' : 'draw-items'">
                 {{ item }}
             </span>
-             <button class="draw-delete-button" :data-index="index" @click="deleteItem"><img src='../../assets/images/delete.svg' alt='delete'></button>
+             <button class="draw-delete-button" @click="deleteItem(index)"><img src='../../assets/images/delete.svg' alt='delete'></button>
         </li>
         <li hidden>
             <span class="draw-items draw-drawn" hidden>
@@ -39,8 +39,8 @@
                     this.items.push(this.inputValue)
                 }
             },
-            deleteItem(e) {
-                this.items.splice(e.target.dataset.index, 1)
+            deleteItem(index) {
+                this.items.splice(index, 1)
             },
             draw() {
                 if (this.items.length < 1) {
@@ -49,16 +49,17 @@
                 }
                 this.isDrawing = true
                 let randomIndex = Math.floor(Math.random() * this.items.length) * 3 + 1
+                const interval = Math.min(2000 / this.items.length, 200)
                 const fn = () => {
                     if (randomIndex > 0) {
                         this.drawnIndex = (this.drawnIndex + 1) % this.items.length
                         randomIndex--
-                        setTimeout(fn, 200)
+                        setTimeout(fn, interval)
                     } else {
                         setTimeout(() => {
                             alert('抽中了：' + this.items[this.drawnIndex])
                             this.isDrawing = false
-                        }, 200)
+                        }, interval)
                     }
                 }
                 fn()

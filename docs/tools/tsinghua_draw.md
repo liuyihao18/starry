@@ -49,16 +49,17 @@
                 }
                 this.isDrawing = true
                 let randomIndex = Math.floor(Math.random() * this.items.length) * 3 + 1
+                const interval = Math.min(2000 / this.items.length, 200)
                 const fn = () => {
                     if (randomIndex > 0) {
                         this.drawnIndex = (this.drawnIndex + 1) % this.items.length
                         randomIndex--
-                        setTimeout(fn, 200)
+                        setTimeout(fn, interval)
                     } else {
                         setTimeout(() => {
                             alert('抽中了：' + this.items[this.drawnIndex])
                             this.isDrawing = false
-                        }, 200)
+                        }, interval)
                     }
                 }
                 fn()
