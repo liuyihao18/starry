@@ -48,7 +48,7 @@
                     return
                 }
                 this.isDrawing = true
-                let randomIndex = Math.floor(Math.random() * this.items.length) * 3 + 1
+                let randomIndex = Math.floor(Math.random() * this.items.length) * 2 + this.items.length
                 const interval = Math.min(2000 / this.items.length, 200)
                 const fn = () => {
                     if (randomIndex > 0) {
