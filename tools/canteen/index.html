@@ -10,13 +10,11 @@
         <meta name="author" content="刘怡豪">
       
       
-        <link rel="canonical" href="https://liuyihao.github.io/starry/tools/draw/">
+        <link rel="canonical" href="https://liuyihao.github.io/starry/tools/canteen/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../draw/">
       
-      
-        <link rel="next" href="../canteen/">
       
       
       <link rel="icon" href="../../assets/images/favicon.ico">
@@ -24,7 +22,7 @@
     
     
       
-        <title>抽签 - 微风拂过之处</title>
+        <title>今天吃什么食堂 - 微风拂过之处</title>
       
     
     
@@ -108,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              抽签
+              今天吃什么食堂
             
           </span>
         </div>
@@ -461,6 +459,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../draw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    抽签
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -475,33 +494,12 @@
         
   
   <span class="md-ellipsis">
-    抽签
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../canteen/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
     今天吃什么食堂
   </span>
   
 
       </a>
+      
     </li>
   
 
@@ -545,9 +543,9 @@
                   
 
 
-  <h1>抽签</h1>
+  <h1>今天吃什么食堂</h1>
 
-<p>这是一个可以自定义选项的抽签小工具，请随意使用！</p>
+<p>不用再烦恼今天吃什么哪个食堂啦！</p>
 <div id="app">
     <div class="draw-input-group">
         <input class="draw-input-item" v-model="inputValue" type="text"/>
@@ -576,7 +574,7 @@
         data() {
             return {
                 inputValue: '',
-                items: [],
+                items: ['紫荆园', '桃李园', '丁香园', '听涛园', '清芬园', '玉树园', '澜园'],
                 drawnIndex: -1,
                 isDrawing: false
             }
