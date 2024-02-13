@@ -28,7 +28,7 @@
         data() {
             return {
                 inputValue: '',
-                items: ['紫荆园', '桃李园', '丁香园', '听涛园', '清芬园', '澜园'],
+                items: ['紫荆园', '桃李园', '丁香园', '听涛园', '清芬园', '玉树园', '澜园'],
                 drawnIndex: -1,
                 isDrawing: false
             }

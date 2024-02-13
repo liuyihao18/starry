@@ -10,9 +10,13 @@ watch:
 # Document Settings
 nav:
   - 主页: 'index.md'
+  - 简单教程: 
+    - 'tutorials/index.md'
+    - SSH密钥的使用: 'tutorials/ssh_keys.md'
   - 小工具: 
+    - 'tools/index.md'
     - 抽签: 'tools/draw.md'
-    - 今天吃什么食堂: 'tools/tsinghua_draw.md'
+    - 今天吃什么食堂: 'tools/canteen.md'
 
 # Theme Settings
 theme:
@@ -42,7 +46,7 @@ theme:
   features:
     # - navigation.instant
     - navigation.tabs
-    - navigation.tabs.sticky
+    # - navigation.tabs.sticky
     - navigation.sections
     - navigation.path
     - navigation.indexes

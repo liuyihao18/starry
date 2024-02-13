@@ -12,8 +12,8 @@ hide:
 
 - 学习笔记
 - 技术分享
-- 简单教程
-- 实用工具
+- [简单教程](tutorials/index.md)
+- [小工具](tools/index.md)
 
 在此与大家共勉！
 
