@@ -18,6 +18,12 @@ nav:
     - 抽签: 'tools/draw.md'
     - 今天吃什么食堂: 'tools/canteen.md'
 
+# Markdown
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences 
+
 # Theme Settings
 theme:
   name: material
