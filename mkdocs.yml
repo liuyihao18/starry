@@ -59,6 +59,10 @@ theme:
     - toc.follow
     - navigation.top
 
+# Exclude Files
+exclude_docs: |
+  /test            
+
 # Extra Parameters
 extra:
   homepage: '../'
