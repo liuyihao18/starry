@@ -477,6 +477,57 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      小试牛刀
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="小试牛刀">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      加密
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      解密
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      签名
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      验证
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -679,6 +730,57 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      小试牛刀
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="小试牛刀">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      加密
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      解密
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      签名
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      验证
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -711,18 +813,129 @@
 </code></pre></div>
 <p>然后被要求输入密码。如果只是偶尔使用还行，但是如果多次使用或者同时开多个终端，那么就会稍显麻烦。为了解决这个问题，我们仅需要把自己的公钥复制到服务器目录<code>~/.ssh/</code>下的文件<code>authorized_keys</code>文件中即可，于是我们便可以直接免密登录服务器啦！</p>
 <blockquote>
-<p>记得重启SSH服务，然后是有些服务器可能需要进一步设置，这就不在本教程的指导范围内了</p>
+<p>记得重启SSH服务，然后有些服务器可能需要进一步设置，这就不在本教程的指导范围内咯</p>
 </blockquote>
 <h3 id="githubssh">GitHub上使用SSH认证</h3>
 <p>还在因为GitHub上HTTPS下载/克隆仓库的速度而绝望吗？那么请务必使用SSH方法。GitHub由于国内不可告人的限制而几乎无法使用了，于是中国程序员成了最会保护自己隐私的人。虽然设置代理也可以加速HTTPS，但是不如直接使用SSH绕过去更方便。</p>
 <p>方法很简单，把自己的公钥复制到GitHub上相应的设置中即可。点击<code>Settings</code>，然后找到<code>SSH and GPG keys</code>，进去点击<code>New SSH Keys</code>，起个自己能认出来是哪个设备的名字，把公钥复制进去，大功告成。
-你可以把自己的设备都这样子添加进去。</p>
+你可以把自己的设备都像这样添加进去。</p>
 <p>使用SSH还有个特别好的地方就是你再也不需要在<code>push</code>私有仓库时输入用户名和密码了，因为SSH已经自动完成了这个过程。非常方便！</p>
 <h2 id="_3">杂谈</h2>
 <p>讲点有趣的事情。大概是疫情刚开始的时候吧，清华树洞用了几百洞的时间进化出了隔壁几万洞都没有进化出来的功能。众所周知，树洞这种平台，虽然是匿名的，但是发出来的信息是公开的。在这种情况下，要怎么才能做到在公开的平台上进行私密的交互呢？</p>
 <p>清华学姐想出了极其牛逼的方法。虽然方法本身很简单，但是其惊人程度世所罕见——将自己的公钥发到树洞上，然后让想要加她QQ好友的人用她的公钥加密QQ号发给她。假设RSA公私钥体系是安全的，那么有且只有学姐能解密出正确的QQ号，然后加这个QQ号的人是且只能是学姐（假设这段时间其他人不会加这个QQ号）。</p>
-<p>太惊人了，当真有种我真的在用我学到的知识这种感觉。虽然平常我们上网都在用RSA非对称加密，但此时此刻才有一种我真的在接触它们的感觉。RSA除了解密还有一种身份认证的功能，就是我用我的私钥加密一段信息，然后你们用我的公钥进行解密。因为能进行加密的是只有拥有私钥的我，所以发出这段信息的只能是我，这也是我一开始说私钥宛如身份证一般的意思。于是我在下面用我自己的私钥加密了一段信息，你们看看是什么内容？</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a> b&#39;\xa5U\x0b\xd2\xca\x05\xad6\x95#\xa0\n\x9c\x82\xda!J\xc9\xaa\x03I\xa7\x96c:Ew\xa2\xf4\x01\x95\xd4A\xac\xf0{TO\x19\x80vg\x9d\x1e\xeb\x84\xb3\xa5\x06\x9fSD\x9a\xd1\xeb\xb1q\x1e\x86\xa0\xa3\xb7\xa0\x82!-\xcca\xcd\xa9\x8d/\xf1\x1d\xab\xe2\xdb}\xe2\x08\xb4\\\xb4&gt;/v\x9e\xae\xb2\xca\xc6\xff*a\xfb\xb4\xf9IOF\xa5\r\xd0(\xebS\x97\x86\x15;i\xac\x0b{1C\xf4\x01\x9b\x96Aa/\xbe\xbb\x91&lt;\xd9\x10b\x0b\x0c\x18\x91\xb6\xf9\x18\x9c\xe4\xd3\x04.$\x19\xc2\xaf\x11\xc5\x13\xd7\xb8\xdaK\xec\xbf\xf2\xdb\xb3w\x1a\xe2\xa6\x1e\x16\x1c\xdc\x94\x0b!\xe2\xf3\xbae\x03\x84-*5\xa4\x99\x1b\xbdq\xa5N\x948-&amp;,h&lt;\xaf\xc34\xc7T\x84\xe7h\xc0{\x97\x07\x81\xdb\xfe\x9e&amp;\xaf\xed\xca_g\xb9)\xe5\x14\xc3\xa2\x82u\xf9\r\xa8\x0e#\xfcA\xee+\xdf%\xa7\xc4z\xbc\x11\x01\xea\x14\xc5v\xf6\xb7\xca+Y\x16\xe8\xd9B*\xe02\&#39;\xdc\xbbyaPc\xed\x04\xb0&quot;\xe0\xeb?*\xaf\x8b\x0b\xa0\xca&amp;T \x9c\x07\xae\x1ea\xc1\xe1KvbK]l\xb1\x97\x018\xd5\x03C-1Z\xe4\x8fMm\x96b\x8e\xaa\x87\\\\\xcat\xf0\xfcnn\x1f&lt;\x02\x88~^4\xd1\xa3\xd1\x85\xa5h\xed\xd7\xb1\x91\x82\x08{\x83=\xb3L\xfc\xc6Uw)\x87\xb1,\x0b\xf0\xe3@\xc7K\x0cd\x82A\xb1\xe5\xcc\xb8\xfd&lt;\x7f$c\x02y:\x15\xfaX{\x93i\x80\xee\xa2u]\x8e&#39;
+<p>太惊人了，真的有种我在用我学到的知识这种感觉。虽然平常我们上网都在用RSA非对称加密，但此时此刻才有一种我真的在接触它们的感觉。RSA除了解密还有一种身份认证的功能，就是我用我的私钥签名一段信息，然后你们用我的公钥进行验证。因为能进行签名的只有拥有私钥的我，所以发出这段信息的只能是我，这也是我一开始说私钥宛如身份证一般的意思。</p>
+<h2 id="_4">小试牛刀</h2>
+<p>用Python的Crypto库可以方便地进行加解密或者签名操作，安装相应的库：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>pycryptodome
+</code></pre></div>
+<h3 id="_5">加密</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span> <span class="nn">os</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kn">from</span> <span class="nn">Crypto.PublicKey</span> <span class="kn">import</span> <span class="n">RSA</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="kn">from</span> <span class="nn">Crypto.Cipher</span> <span class="kn">import</span> <span class="n">PKCS1_OAEP</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">user_home_directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="s1">&#39;~&#39;</span><span class="p">)</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1"># 读取公钥文件</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">user_home_directory</span><span class="p">,</span> <span class="s1">&#39;.ssh&#39;</span><span class="p">,</span> <span class="s1">&#39;id_rsa.pub&#39;</span><span class="p">),</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="n">public_key</span> <span class="o">=</span> <span class="n">RSA</span><span class="o">.</span><span class="n">import_key</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="c1"># 创建加密器</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="n">cipher</span> <span class="o">=</span> <span class="n">PKCS1_OAEP</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">public_key</span><span class="p">)</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="c1"># 要加密的数据</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="n">data</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;Happy Spring Festival&#39;</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="c1"># 加密数据</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="n">encrypted_data</span> <span class="o">=</span> <span class="n">cipher</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Encrypted Data:&quot;</span><span class="p">,</span> <span class="n">encrypted_data</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="_6">解密</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span> <span class="nn">os</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kn">from</span> <span class="nn">Crypto.PublicKey</span> <span class="kn">import</span> <span class="n">RSA</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="kn">from</span> <span class="nn">Crypto.Cipher</span> <span class="kn">import</span> <span class="n">PKCS1_OAEP</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">user_home_directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="s1">&#39;~&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c1"># 读取私钥文件</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">user_home_directory</span><span class="p">,</span> <span class="s1">&#39;.ssh&#39;</span><span class="p">,</span> <span class="s1">&#39;id_rsa&#39;</span><span class="p">),</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    <span class="n">private_key</span> <span class="o">=</span> <span class="n">RSA</span><span class="o">.</span><span class="n">import_key</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="c1"># 创建解密器</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="n">decryptor</span> <span class="o">=</span> <span class="n">PKCS1_OAEP</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">private_key</span><span class="p">)</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="c1"># 要解密的数据</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="n">encrypted_data</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;]Ck$</span><span class="se">\x02</span><span class="s1">Y.</span><span class="se">\x90</span><span class="s1">k</span><span class="se">\xa3\xcb</span><span class="s1">n</span><span class="se">\xb7</span><span class="s1">#</span><span class="se">\x0e\x95\xab\xca\xb2\xdb\x85</span><span class="s1">)</span><span class="se">\xdc\x87</span><span class="s1">l</span><span class="se">\n\xb4\xec\xa9\xcb\xee\xf7\xa8</span><span class="s1">jQ</span><span class="se">\xa5\x8d\x14\xc1\x98\xcb\xf1</span><span class="s1">,+#</span><span class="se">\x9b</span><span class="s1">&quot;y</span><span class="se">\xb9\x8e\xe9</span><span class="s1">:6</span><span class="se">\xbb\xac</span><span class="s1">N</span><span class="se">\xe7</span><span class="s1">K</span><span class="se">\x11\xea\xc6\x81</span><span class="s1">N</span><span class="se">\xd2</span><span class="s1">k</span><span class="se">\xc2\x8c\xf5\x9e</span><span class="s1">2</span><span class="se">\xa7\x8f\xa3\xf7</span><span class="s1">-`5</span><span class="se">\xc7\x9a</span><span class="s1">)_w</span><span class="se">\xb3\x86\xc0\x08</span><span class="s1">8</span><span class="se">\xcb\xfc\x96</span><span class="s1">M</span><span class="se">\xf7\x10\x1d\xa2\x88\x04</span><span class="s1"> </span><span class="se">\x87</span><span class="s1">&lt;</span><span class="se">\xa6\xf8\xc3\xaf\x08\x03</span><span class="s1">r</span><span class="se">\xb3\xa8\xd8\x8b</span><span class="s1">E</span><span class="se">\xf4\xb8\xeb\x0f</span><span class="s1">/</span><span class="se">\xcd</span><span class="s1">8</span><span class="se">\xd7</span><span class="s1">q</span><span class="se">\xfb\x1a\x82\xb2\xbc\xda\x81\x92</span><span class="s1">v</span><span class="se">\x1d\xe5\xde\x84</span><span class="s1">-</span><span class="se">\xc5\xe3\xe5\xd7\x95</span><span class="s1">6</span><span class="se">\xc3\xb6\x94</span><span class="s1">sm</span><span class="se">\xea\&#39;\x1b\xfc\xcf\x8a\xe4</span><span class="s1">4C`</span><span class="se">\xd5\x0c\xaa\x9d\&#39;\xe7\\\x03\xc2</span><span class="s1">C</span><span class="se">\xc1\xf2</span><span class="s1">hF</span><span class="se">\xde\x15\xd3\xb4\x8b\x97\x00</span><span class="s1">&quot;</span><span class="se">\xd7\xaf\xfc\xbc</span><span class="s1">O</span><span class="se">\xe8</span><span class="s1">Z</span><span class="se">\xc6\xfe</span><span class="s1">&amp;</span><span class="se">\x17\x16\xb8\xe0\x9a\x1f</span><span class="s1">,</span><span class="se">\x85\\</span><span class="s1">n!K</span><span class="se">\xe5</span><span class="s1">O</span><span class="se">\xb1\xe4</span><span class="s1">)}</span><span class="se">\xbb</span><span class="s1">[</span><span class="se">\xf7</span><span class="s1">u[0</span><span class="se">\xa1</span><span class="s1">@t0{e</span><span class="se">\xb2\xfe</span><span class="s1">8Eqq</span><span class="se">\xcf</span><span class="s1">Z&lt;g</span><span class="se">\x9f\x96\xc5\xfa\xb4</span><span class="s1">[</span><span class="se">\xdf\xb2\xdd\xc2</span><span class="s1">;</span><span class="se">\xe6\xd0\xc1\x92\xf1\xc1\xf1</span><span class="s1">Y</span><span class="se">\xbd\x89\x89\x82</span><span class="s1">%bg</span><span class="se">\xfb</span><span class="s1">XLY</span><span class="se">\x03\xa5\x8f\xa9\x8e\x9f\xc8\x03\x12</span><span class="s1">L</span><span class="se">\xb2\x06\xcd</span><span class="s1">u</span><span class="se">\xb1</span><span class="s1">z</span><span class="se">\xa6</span><span class="s1">q2</span><span class="se">\t\xbd</span><span class="s1">YAg</span><span class="se">\xfe\x81</span><span class="s1">#</span><span class="se">\xc0\x7f</span><span class="s1">*T</span><span class="se">\x03</span><span class="s1">n</span><span class="se">\xcb</span><span class="s1">d</span><span class="se">\x16\xa0</span><span class="s1">C</span><span class="se">\xa9\xdf\xf3</span><span class="s1">Um</span><span class="se">\x93\xfe\xb6</span><span class="s1">EuZV</span><span class="se">\xb3</span><span class="s1"> P</span><span class="se">\xe2\x00\xfd</span><span class="s1">L</span><span class="se">\xb5\xd1\xf0\xc5\x18</span><span class="s1">%</span><span class="se">\x7f</span><span class="s1"> G</span><span class="se">\xdc\xe1</span><span class="s1">Wp</span><span class="se">\xc1</span><span class="s1">g</span><span class="se">\x97</span><span class="s1">GM</span><span class="se">\xd1\xbc\xc0\xb4\x98</span><span class="s1">]</span><span class="se">\x81\xb9\xf0\x98\x10</span><span class="s1">Td9</span><span class="se">\x13\x8c\xbd\x9b</span><span class="s1">j</span><span class="se">\x9d\x9a\x9e\xbe</span><span class="s1">?</span><span class="se">\xa6</span><span class="s1">vnd</span><span class="se">\xdf\x80\xd9\x96\x9d\xf3\x92</span><span class="s1">.</span><span class="se">\xd7\xef\x7f</span><span class="s1">1S</span><span class="se">\x06\xf1\x8a\xe9</span><span class="s1">k</span><span class="se">\xb8</span><span class="s1">z</span><span class="se">\xb7\xaf</span><span class="s1">J&#39;</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="c1"># 解密数据</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="n">decrypted_data</span> <span class="o">=</span> <span class="n">decryptor</span><span class="o">.</span><span class="n">decrypt</span><span class="p">(</span><span class="n">encrypted_data</span><span class="p">)</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Decrypted Data:&quot;</span><span class="p">,</span> <span class="n">decrypted_data</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="_7">签名</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span> <span class="nn">os</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kn">from</span> <span class="nn">Crypto.PublicKey</span> <span class="kn">import</span> <span class="n">RSA</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="kn">from</span> <span class="nn">Crypto.Signature</span> <span class="kn">import</span> <span class="n">PKCS1_v1_5</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="kn">from</span> <span class="nn">Crypto.Hash</span> <span class="kn">import</span> <span class="n">SHA256</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="n">user_home_directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="s1">&#39;~&#39;</span><span class="p">)</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="c1"># 读取私钥文件</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">user_home_directory</span><span class="p">,</span> <span class="s1">&#39;.ssh&#39;</span><span class="p">,</span> <span class="s1">&#39;id_rsa&#39;</span><span class="p">),</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    <span class="n">private_key</span> <span class="o">=</span> <span class="n">RSA</span><span class="o">.</span><span class="n">import_key</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="c1"># 要签名的数据</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="n">data</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;Happy Spring Festival&#39;</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="c1"># 计算数据的哈希值</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="n">hash_value</span> <span class="o">=</span> <span class="n">SHA256</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="c1"># 创建签名器</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="n">signer</span> <span class="o">=</span> <span class="n">PKCS1_v1_5</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">private_key</span><span class="p">)</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="c1"># 对数据的哈希值进行签名</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="n">signature</span> <span class="o">=</span> <span class="n">signer</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">hash_value</span><span class="p">)</span>
+<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>
+<a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="c1"># 将签名保存到文件中</span>
+<a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;signature.bin&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a>    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">signature</span><span class="p">)</span>
+<a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a>
+<a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Signature created and saved to signature.bin&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="_8">验证</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span> <span class="nn">os</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kn">from</span> <span class="nn">Crypto.PublicKey</span> <span class="kn">import</span> <span class="n">RSA</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="kn">from</span> <span class="nn">Crypto.Signature</span> <span class="kn">import</span> <span class="n">PKCS1_v1_5</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="kn">from</span> <span class="nn">Crypto.Hash</span> <span class="kn">import</span> <span class="n">SHA256</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="n">user_home_directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="s1">&#39;~&#39;</span><span class="p">)</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="c1"># 读取公钥文件</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">user_home_directory</span><span class="p">,</span> <span class="s1">&#39;.ssh&#39;</span><span class="p">,</span> <span class="s1">&#39;id_rsa.pub&#39;</span><span class="p">),</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    <span class="n">public_key</span> <span class="o">=</span> <span class="n">RSA</span><span class="o">.</span><span class="n">import_key</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="c1"># 读取签名文件</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;signature.bin&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>    <span class="n">signature</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="c1"># 要签名的数据</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="n">data</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;Happy Spring Festival&#39;</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="c1"># 计算消息的哈希值</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="n">hash_value</span> <span class="o">=</span> <span class="n">SHA256</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="c1"># 创建签名验证器</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="n">verifier</span> <span class="o">=</span> <span class="n">PKCS1_v1_5</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">public_key</span><span class="p">)</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="c1"># 验证签名</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="k">if</span> <span class="n">verifier</span><span class="o">.</span><span class="n">verify</span><span class="p">(</span><span class="n">hash_value</span><span class="p">,</span> <span class="n">signature</span><span class="p">):</span>
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Signature is valid.&quot;</span><span class="p">)</span>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Signature is invalid.&quot;</span><span class="p">)</span>
 </code></pre></div>
 
 
