@@ -6,6 +6,7 @@ site_author: 刘怡豪
 # Watch Settings
 watch:
   - custom_theme/
+  - scripts/
 
 # Document Settings
 nav:
@@ -34,6 +35,10 @@ extra_javascript:
   - assets/javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Hooks
+hooks:
+  - scripts/pre_process_japanese.py
 
 # Theme Settings
 theme:
@@ -68,11 +73,7 @@ theme:
     - navigation.path
     - navigation.indexes
     - toc.follow
-    - navigation.top
-
-# Exclude Files
-exclude_docs: |
-  /test            
+    - navigation.top        
 
 # Extra Parameters
 extra:
