@@ -1,5 +1,58 @@
 不用再烦恼今天吃什么哪个食堂啦！
 
+<style>
+.draw-input-group {
+    display: flex;
+    max-width: 24em;
+}
+
+.draw-input-item {
+    width: 60%;
+    padding: 0 5px;
+    border: 1px #333 solid;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.draw-button {
+    min-width: 64px;
+    padding: 4px 15px;
+    color: #409eff;
+    background: #ecf5ff;
+    border: 1px #a0cfff solid;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.25s, background-color 0.25s, border-color 0.25s;
+}
+
+.draw-button:hover {
+    color: #ffffff;
+    background: #409eff;
+    border: 1px #409eff solid;
+}
+
+.draw-button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.draw-delete-button {
+    position: relative;
+    top: 2.5px;
+    margin-left: 20px;
+    width: 16px;
+}
+
+.draw-items {
+    padding: 1px;
+}
+
+.draw-drawn {
+    background-color: #a0cfff67;
+    transition: background-color 0.05s;
+}
+</style>
+
 <div id="app">
     <div class="draw-input-group">
         <input class="draw-input-item" v-model="inputValue" type="text"/>

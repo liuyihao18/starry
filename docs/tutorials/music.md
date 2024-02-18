@@ -96,6 +96,83 @@ if __name__ == "__main__":
 
 当然用JavaScript也行，结合CSS，甚至可以写一个简单的钢琴出来，不信你看：
 
+<style>
+/* Piano */
+.piano {
+    --key-scale: 30;
+    --black-key-width: calc(1.6px * var(--key-scale));
+    --white-key-width: calc(2.3px * var(--key-scale));
+    --black-key-height: calc(4px * var(--key-scale));
+    --white-key-height: calc(6px * var(--key-scale));
+    width: calc(var(--white-key-width) * 7 + 1);
+    height: var(--white-key-height);
+    position: relative;
+    overflow: hidden;
+}
+
+.key {
+    position: absolute;
+    border: 1px solid black;
+}
+
+.white {
+    width: var(--white-key-width);
+    height: var(--white-key-height);
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+    width: var(--black-key-width);
+    height: var(--black-key-height);
+    z-index: 1;
+}
+
+.white:nth-child(2) {
+    left: calc((var(--white-key-width) - 1px) * 1);
+}
+
+.white:nth-child(3) {
+    left: calc((var(--white-key-width) - 1px) * 2);
+}
+
+.white:nth-child(4) {
+    left: calc((var(--white-key-width) - 1px) * 3);
+}
+
+.white:nth-child(5) {
+    left: calc((var(--white-key-width) - 1px) * 4);
+}
+
+.white:nth-child(6) {
+    left: calc((var(--white-key-width) - 1px) * 5);
+}
+
+.white:nth-child(7) {
+    left: calc((var(--white-key-width) - 1px) * 6);
+}
+
+.black:nth-child(1) {
+    left: calc(((2 * var(--white-key-width)) + 1px - var(--black-key-width)) / 2);
+}
+
+.black:nth-child(2) {
+    left: calc(((2 * var(--white-key-width)) + 1px - var(--black-key-width)) / 2 + (var(--white-key-width) - 1px) * 1);
+}
+
+.black:nth-child(3) {
+    left: calc(((2 * var(--white-key-width)) + 1px - var(--black-key-width)) / 2 + (var(--white-key-width) - 1px) * 3);
+}
+
+.black:nth-child(4) {
+    left: calc(((2 * var(--white-key-width)) + 1px - var(--black-key-width)) / 2 + (var(--white-key-width) - 1px) * 4);
+}
+
+.black:nth-child(5) {
+    left: calc(((2 * var(--white-key-width)) + 1px - var(--black-key-width)) / 2 + (var(--white-key-width) - 1px) * 5);
+}
+</style>
+
 <div class="piano">
   <div class="white-group">
     <div class="key white" onclick="playSound(261.626)"></div>
