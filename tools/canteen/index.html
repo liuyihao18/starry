@@ -220,6 +220,26 @@
     
     
       <li class="md-tabs__item">
+        <a href="../../japanese/" class="md-tabs__link">
+          
+  
+    
+  
+  日本語の勉強
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
         <a href="../../tutorials/" class="md-tabs__link">
           
   
@@ -320,10 +340,6 @@
           
         
       
-        
-      
-        
-      
     
     
     
@@ -341,6 +357,68 @@
           
           
           <div class="md-nav__link md-nav__container">
+            <a href="../../japanese/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    日本語の勉強
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            日本語の勉強
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
             <a href="../../tutorials/" class="md-nav__link ">
               
   
@@ -352,14 +430,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             知识分享
           </label>
@@ -447,7 +525,7 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           
@@ -463,14 +541,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             小工具
           </label>
@@ -569,6 +647,59 @@
   <h1>今天吃什么食堂</h1>
 
 <p>不用再烦恼今天吃什么哪个食堂啦！</p>
+<style>
+.draw-input-group {
+    display: flex;
+    max-width: 24em;
+}
+
+.draw-input-item {
+    width: 60%;
+    padding: 0 5px;
+    border: 1px #333 solid;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.draw-button {
+    min-width: 64px;
+    padding: 4px 15px;
+    color: #409eff;
+    background: #ecf5ff;
+    border: 1px #a0cfff solid;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.25s, background-color 0.25s, border-color 0.25s;
+}
+
+.draw-button:hover {
+    color: #ffffff;
+    background: #409eff;
+    border: 1px #409eff solid;
+}
+
+.draw-button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.draw-delete-button {
+    position: relative;
+    top: 2.5px;
+    margin-left: 20px;
+    width: 16px;
+}
+
+.draw-items {
+    padding: 1px;
+}
+
+.draw-drawn {
+    background-color: #a0cfff67;
+    transition: background-color 0.05s;
+}
+</style>
+
 <div id="app">
     <div class="draw-input-group">
         <input class="draw-input-item" v-model="inputValue" type="text"/>
@@ -689,7 +820,7 @@
     
       <script src="../../assets/javascripts/bundle.caa56a14.min.js"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="../../assets/javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

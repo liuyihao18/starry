@@ -223,6 +223,26 @@
         
   
   
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../japanese/" class="md-tabs__link">
+          
+  
+    
+  
+  日本語の勉強
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
     
   
   
@@ -318,6 +338,64 @@
       
   
   
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../japanese/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    日本語の勉強
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            日本語の勉強
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -345,7 +423,7 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
@@ -361,14 +439,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             知识分享
           </label>
@@ -578,7 +656,7 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           
@@ -594,14 +672,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             小工具
           </label>
@@ -866,6 +944,83 @@ y(t) = \sum_{i} A_i \cos(2 \pi f_i t)
 <p>记得安装对应的库！</p>
 </blockquote>
 <p>当然用JavaScript也行，结合CSS，甚至可以写一个简单的钢琴出来，不信你看：</p>
+<style>
+/* Piano */
+.piano {
+    --key-scale: 30;
+    --black-key-width: calc(1.6px * var(--key-scale));
+    --white-key-width: calc(2.3px * var(--key-scale));
+    --black-key-height: calc(4px * var(--key-scale));
+    --white-key-height: calc(6px * var(--key-scale));
+    width: calc(var(--white-key-width) * 7 + 1);
+    height: var(--white-key-height);
+    position: relative;
+    overflow: hidden;
+}
+
+.key {
+    position: absolute;
+    border: 1px solid black;
+}
+
+.white {
+    width: var(--white-key-width);
+    height: var(--white-key-height);
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+    width: var(--black-key-width);
+    height: var(--black-key-height);
+    z-index: 1;
+}
+
+.white:nth-child(2) {
+    left: calc((var(--white-key-width) - 1px) * 1);
+}
+
+.white:nth-child(3) {
+    left: calc((var(--white-key-width) - 1px) * 2);
+}
+
+.white:nth-child(4) {
+    left: calc((var(--white-key-width) - 1px) * 3);
+}
+
+.white:nth-child(5) {
+    left: calc((var(--white-key-width) - 1px) * 4);
+}
+
+.white:nth-child(6) {
+    left: calc((var(--white-key-width) - 1px) * 5);
+}
+
+.white:nth-child(7) {
+    left: calc((var(--white-key-width) - 1px) * 6);
+}
+
+.black:nth-child(1) {
+    left: calc(((2 * var(--white-key-width)) + 1px - var(--black-key-width)) / 2);
+}
+
+.black:nth-child(2) {
+    left: calc(((2 * var(--white-key-width)) + 1px - var(--black-key-width)) / 2 + (var(--white-key-width) - 1px) * 1);
+}
+
+.black:nth-child(3) {
+    left: calc(((2 * var(--white-key-width)) + 1px - var(--black-key-width)) / 2 + (var(--white-key-width) - 1px) * 3);
+}
+
+.black:nth-child(4) {
+    left: calc(((2 * var(--white-key-width)) + 1px - var(--black-key-width)) / 2 + (var(--white-key-width) - 1px) * 4);
+}
+
+.black:nth-child(5) {
+    left: calc(((2 * var(--white-key-width)) + 1px - var(--black-key-width)) / 2 + (var(--white-key-width) - 1px) * 5);
+}
+</style>
+
 <div class="piano">
   <div class="white-group">
     <div class="key white" onclick="playSound(261.626)"></div>
@@ -957,7 +1112,7 @@ function playSound(frequency) {
     
       <script src="../../assets/javascripts/bundle.caa56a14.min.js"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="../../assets/javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
