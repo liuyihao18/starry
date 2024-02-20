@@ -1,11 +1,15 @@
 import re
 
+from mkdocs.structure.toc import AnchorLink
+
 # 定义正则表达式模式
-pattern = r'\[(.*?[\(（].*?[\)）].*?)\]'
-subpattern = r'(.*?)[\(（](.*?)[\)）]'
+pattern = r'\[(.*?{.*?}.*?)\]'
+subpattern = r'(.*?){(.*?)}'
+accent_pattern = r'\((.*?)\);'
+toc_pattern = r'(.*?)\((.*?)\)'
 
 # 定义替换函数
-def replace(match):
+def replace_kana(match):
     subtext = match.group(1)
     new_text = '<ruby>'
     submatches = re.finditer(subpattern, subtext)
@@ -19,6 +23,31 @@ def replace(match):
     new_text = new_text + '</ruby>'
     return new_text
 
+def replace_accent(match):
+    new_text = '<span class="circled-number">'
+    new_text = new_text + match.group(1)
+    new_text = new_text + '</span>'
+    return new_text
+
+# 递归替换锚点
+def replace_toc(toc):
+    submatches = re.finditer(toc_pattern, toc.title)
+    new_title = ''
+    for submatch in submatches:
+        kanji = submatch.group(1)
+        new_title = new_title + kanji
+    if len(new_title) > 0:
+        toc.title = new_title
+    for child in toc.children:
+        replace_toc(child)
+
 def on_page_markdown(markdown, **kwargs):
-    return re.sub(pattern, replace, markdown)
+    markdown = re.sub(pattern, replace_kana, markdown)
+    markdown = re.sub(accent_pattern, replace_accent, markdown)
+    return markdown
+
+def on_page_content(html, page, **kwargs):
+    for toc in page.toc:
+        replace_toc(toc)
+    return html
     
