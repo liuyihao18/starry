@@ -119,9 +119,20 @@
 
 ## ローマ[字{じ}]
 
-罗马字用于日语的读音或者输入法输入，非常重要。
+罗马字用于日语的读音或输入法输入，非常重要。
 
-<table border="0" cellspacing="2px" cellpadding="2px" width="100%" style="text-align: center;">
+<style>
+.tab-romaji th, .tab-romaji td {
+    padding: 2px;
+}
+</style>
+
+<table class="tab-romaji" border="0" cellspacing="2px" cellpadding="2px" width="100%" style="
+    border-spacing: 2px;
+    text-align: center;
+    font-size: .75rem;
+    color: rgba(0, 0, 0, 0.87)
+">
 
 <tbody><tr>
 <th colspan="5" bgcolor="#BED5EB" width="55%">五十音
@@ -383,3 +394,5 @@
 </td>
 <td bgcolor="#F3F5DE"><span lang="ja">ぴょ</span> <span lang="ja">ピョ</span> <span lang="ja-latn">pyo</span>
 </td></tr></tbody></table>
+
+> 上述表格取自维基百科

@@ -5,8 +5,8 @@ from mkdocs.structure.toc import AnchorLink
 # 定义正则表达式模式
 pattern = r'\[(.*?{.*?}.*?)\]'
 subpattern = r'(.*?){(.*?)}'
-accent_pattern = r'\((.*?)\);'
-toc_pattern = r'(.*?)\((.*?)\)'
+accent_pattern = r'\((\d*?)\);'
+toc_pattern = r'\(.*?\)'
 
 # 定义替换函数
 def replace_kana(match):
@@ -31,13 +31,8 @@ def replace_accent(match):
 
 # 递归替换锚点
 def replace_toc(toc):
-    submatches = re.finditer(toc_pattern, toc.title)
-    new_title = ''
-    for submatch in submatches:
-        kanji = submatch.group(1)
-        new_title = new_title + kanji
-    if len(new_title) > 0:
-        toc.title = new_title
+    # TODO: 解决匹配的头部和尾部问题（用替换）
+    toc.title = re.sub(toc_pattern, '', toc.title)
     for child in toc.children:
         replace_toc(child)
 

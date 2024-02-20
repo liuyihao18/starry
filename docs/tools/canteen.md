@@ -9,7 +9,7 @@
 .draw-input-item {
     width: 60%;
     padding: 0 5px;
-    border: 1px #333 solid;
+    border: 1px var(--md-typeset-color) solid;
     border-radius: 4px;
     margin-right: 10px;
     font-size: 16px;
@@ -18,29 +18,34 @@
 .draw-button {
     min-width: 64px;
     padding: 4px 15px;
-    color: #409eff;
-    background: #ecf5ff;
-    border: 1px #a0cfff solid;
+    color: var(--md-primary-fg-color--light);
+    background: var(--md-primary-bg-color);
+    border: 1px var(--md-primary-fg-color) solid;
     border-radius: 4px;
     cursor: pointer;
     transition: color 0.25s, background-color 0.25s, border-color 0.25s;
 }
 
 .draw-button:hover {
-    color: #ffffff;
-    background: #409eff;
-    border: 1px #409eff solid;
+    color: var(--md-primary-bg-color);
+    background: var(--md-primary-fg-color--light);
+    border: 1px var(--md-primary-fg-color) solid;
 }
 
 .draw-button:not(:last-child) {
     margin-right: 10px;
 }
 
-.draw-delete-button {
+.draw-delete-button svg {
     position: relative;
-    top: 2.5px;
+    top: 3px;
     margin-left: 20px;
     width: 16px;
+    height: 16px;
+}
+
+.draw-delete-button svg path {
+    stroke: var(--md-typeset-color);
 }
 
 .draw-items {
@@ -48,7 +53,7 @@
 }
 
 .draw-drawn {
-    background-color: #a0cfff67;
+    background-color: color-mix(in srgb, var(--md-primary-fg-color--light) 50%, #ffffff00);
     transition: background-color 0.05s;
 }
 </style>
@@ -64,7 +69,9 @@
             <span :class="index === drawnIndex ? 'draw-items draw-drawn' : 'draw-items'">
                 {{ item }}
             </span>
-             <button class="draw-delete-button" @click="deleteItem(index)"><img src='../../assets/images/delete.svg' alt='delete'></button>
+             <button class="draw-delete-button" @click="deleteItem(index)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M160 256H96a32 32 0 0 1 0-64h256V95.936a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V192h256a32 32 0 1 1 0 64h-64v672a32 32 0 0 1-32 32H192a32 32 0 0 1-32-32zm448-64v-64H416v64zM224 896h576V256H224zm192-128a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32m192 0a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32"></path></svg>
+             </button>
         </li>
         <li hidden>
             <span class="draw-items draw-drawn" hidden>

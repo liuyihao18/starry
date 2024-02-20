@@ -97,7 +97,6 @@ if __name__ == "__main__":
 当然用JavaScript也行，结合CSS，甚至可以写一个简单的钢琴出来，不信你看：
 
 <style>
-/* Piano */
 .piano {
     --key-scale: 30;
     --black-key-width: calc(1.6px * var(--key-scale));
