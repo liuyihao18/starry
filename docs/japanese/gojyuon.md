@@ -117,6 +117,82 @@
 
 日语单词的音调为低高型、高低型和低高低型3种，一般用(0);、(1);、(2);、(3);等数字符号或线式表示。
 
+<style>
+        .accent {
+            position: relative;
+            height: 40px;
+            overflow: hidden;
+            text-align: left;
+            text-wrap: nowrap;
+        }
+
+        .accent span {
+            position: relative;
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            margin-right: 9px;
+            border: 1px solid var(--md-typeset-color);
+            border-radius: 50%;
+        }
+
+        .accent span:not(:last-child) {
+            background: var(--md-typeset-color);
+        }
+
+        .accent0 span {
+            top: -4px;
+        }
+
+        .accent0 span:first-child {
+            top: 16px;
+        }
+
+        .accent1 span:first-child {
+            top: -4px;
+        }
+
+        .accent1 span {
+            top: 16px;
+        }
+
+        .accent2 span {
+            top: 16px;
+        }
+
+        .accent2 span:nth-child(2) {
+            top: -4px;
+        }
+
+        .accent3 span {
+            top: 16px;
+        }
+
+        .accent3 span:nth-child(2), .accent3 span:nth-child(3) {
+            top: -4px;
+        }
+
+        .accent4 span {
+            top: 16px;
+        }
+
+        .accent4 span:nth-child(2), .accent4 span:nth-child(3), .accent4 span:nth-child(4) {
+            top: -4px;
+        }
+
+        td {
+            vertical-align: middle !important;
+        }
+</style>
+
+|  型   |                                              一拍词                                               |                                                      二拍词                                                      |                                                             三拍词                                                              |                                                                     四拍词                                                                     |                                                                            五拍词                                                                             |
+| :---: | :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| (0);  | <div class="accent accent0"><span></span><span></span></div><div style="text-align:left">ひ</div> | <div class="accent accent0"><span></span><span></span><span></span></div><div style="text-align:left">いく</div> | <div class="accent accent0"><span></span><span></span><span></span><span></span></div><div style="text-align:left">ざっし</div> | <div class="accent accent0"><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">ちかてつ</div> | <div class="accent accent0"><span></span><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">だいどころ</div> |
+| (1);  | <div class="accent accent1"><span></span><span></span></div><div style="text-align:left">は</div> | <div class="accent accent1"><span></span><span></span><span></span></div><div style="text-align:left">はる</div> | <div class="accent accent1"><span></span><span></span><span></span><span></span></div><div style="text-align:left">かぞく</div> | <div class="accent accent1"><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">けいざい</div> | <div class="accent accent1"><span></span><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">レストラン</div> |
+| (2);  |                                                                                                   | <div class="accent accent2"><span></span><span></span><span></span></div><div style="text-align:left">やま</div> | <div class="accent accent2"><span></span><span></span><span></span><span></span></div><div style="text-align:left">たべる</div> | <div class="accent accent2"><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">デパート</div> | <div class="accent accent2"><span></span><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">おかあさん</div> |
+| (3);  |                                                                                                   |                                                                                                                  | <div class="accent accent3"><span></span><span></span><span></span><span></span></div><div style="text-align:left">おとこ</div> | <div class="accent accent3"><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">ちいさい</div> | <div class="accent accent3"><span></span><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">あらためて</div> |
+| (4);  |                                                                                                   |                                                                                                                  |                                                                                                                                 | <div class="accent accent4"><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">いもうと</div> | <div class="accent accent4"><span></span><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">すばらしい</div> |
+
 ## ローマ[字{じ}]
 
 罗马字用于日语的读音或输入法输入，非常重要。
@@ -395,4 +471,4 @@
 <td bgcolor="#F3F5DE"><span lang="ja">ぴょ</span> <span lang="ja">ピョ</span> <span lang="ja-latn">pyo</span>
 </td></tr></tbody></table>
 
-> 上述表格取自维基百科
+> 上述表格取自维基百科。
