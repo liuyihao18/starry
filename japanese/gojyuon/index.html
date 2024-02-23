@@ -1331,6 +1331,128 @@
 </ul>
 <h3 id="accent"><ruby>日<rp>(</rp><rt>に</rt><rp>)</rp>本<rp>(</rp><rt>ほん</rt><rp>)</rp>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>のアクセント（Accent）</h3>
 <p>日语单词的音调为低高型、高低型和低高低型3种，一般用<span class="circled-number">0</span>、<span class="circled-number">1</span>、<span class="circled-number">2</span>、<span class="circled-number">3</span>等数字符号或线式表示。</p>
+<style>
+        .accent {
+            position: relative;
+            height: 40px;
+            overflow: hidden;
+            text-align: left;
+            text-wrap: nowrap;
+        }
+
+        .accent span {
+            position: relative;
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            margin-right: 9px;
+            border: 1px solid var(--md-typeset-color);
+            border-radius: 50%;
+        }
+
+        .accent span:not(:last-child) {
+            background: var(--md-typeset-color);
+        }
+
+        .accent0 span {
+            top: -4px;
+        }
+
+        .accent0 span:first-child {
+            top: 16px;
+        }
+
+        .accent1 span:first-child {
+            top: -4px;
+        }
+
+        .accent1 span {
+            top: 16px;
+        }
+
+        .accent2 span {
+            top: 16px;
+        }
+
+        .accent2 span:nth-child(2) {
+            top: -4px;
+        }
+
+        .accent3 span {
+            top: 16px;
+        }
+
+        .accent3 span:nth-child(2), .accent3 span:nth-child(3) {
+            top: -4px;
+        }
+
+        .accent4 span {
+            top: 16px;
+        }
+
+        .accent4 span:nth-child(2), .accent4 span:nth-child(3), .accent4 span:nth-child(4) {
+            top: -4px;
+        }
+
+        td {
+            vertical-align: middle !important;
+        }
+</style>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">型</th>
+<th style="text-align: center;">一拍词</th>
+<th style="text-align: center;">二拍词</th>
+<th style="text-align: center;">三拍词</th>
+<th style="text-align: center;">四拍词</th>
+<th style="text-align: center;">五拍词</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="circled-number">0</span></td>
+<td style="text-align: center;"><div class="accent accent0"><span></span><span></span></div><div style="text-align:left">ひ</div></td>
+<td style="text-align: center;"><div class="accent accent0"><span></span><span></span><span></span></div><div style="text-align:left">いく</div></td>
+<td style="text-align: center;"><div class="accent accent0"><span></span><span></span><span></span><span></span></div><div style="text-align:left">ざっし</div></td>
+<td style="text-align: center;"><div class="accent accent0"><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">ちかてつ</div></td>
+<td style="text-align: center;"><div class="accent accent0"><span></span><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">だいどころ</div></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="circled-number">1</span></td>
+<td style="text-align: center;"><div class="accent accent1"><span></span><span></span></div><div style="text-align:left">は</div></td>
+<td style="text-align: center;"><div class="accent accent1"><span></span><span></span><span></span></div><div style="text-align:left">はる</div></td>
+<td style="text-align: center;"><div class="accent accent1"><span></span><span></span><span></span><span></span></div><div style="text-align:left">かぞく</div></td>
+<td style="text-align: center;"><div class="accent accent1"><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">けいざい</div></td>
+<td style="text-align: center;"><div class="accent accent1"><span></span><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">レストラン</div></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="circled-number">2</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><div class="accent accent2"><span></span><span></span><span></span></div><div style="text-align:left">やま</div></td>
+<td style="text-align: center;"><div class="accent accent2"><span></span><span></span><span></span><span></span></div><div style="text-align:left">たべる</div></td>
+<td style="text-align: center;"><div class="accent accent2"><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">デパート</div></td>
+<td style="text-align: center;"><div class="accent accent2"><span></span><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">おかあさん</div></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="circled-number">3</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><div class="accent accent3"><span></span><span></span><span></span><span></span></div><div style="text-align:left">おとこ</div></td>
+<td style="text-align: center;"><div class="accent accent3"><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">ちいさい</div></td>
+<td style="text-align: center;"><div class="accent accent3"><span></span><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">あらためて</div></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="circled-number">4</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><div class="accent accent4"><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">いもうと</div></td>
+<td style="text-align: center;"><div class="accent accent4"><span></span><span></span><span></span><span></span><span></span><span></span></div><div style="text-align:left">すばらしい</div></td>
+</tr>
+</tbody>
+</table>
 <h2 id="_12">ローマ<ruby>字<rp>(</rp><rt>じ</rt><rp>)</rp></ruby></h2>
 <p>罗马字用于日语的读音或输入法输入，非常重要。</p>
 <style>
@@ -1608,7 +1730,7 @@
 </td></tr></tbody></table>
 
 <blockquote>
-<p>上述表格取自维基百科</p>
+<p>上述表格取自维基百科。</p>
 </blockquote>
 
 
