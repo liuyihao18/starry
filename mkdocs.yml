@@ -14,7 +14,10 @@ nav:
   - 日本語の勉強:
     - 'japanese/index.md'
     - 五十音: 'japanese/gojyuon.md'
-    - 文法: 'japanese/bunpou.md'
+    - 文法: 
+      - 'japanese/bunpou/index.md'
+      - 助词:
+        - 格助词: 'japanese/bunpou/kakujyoshi.md'
     - ごちうさ: 'japanese/gochiusa.md'
   - 知识分享: 
     - 'tutorials/index.md'
@@ -27,6 +30,8 @@ nav:
 
 # Markdown
 markdown_extensions:
+  - toc:
+      permalink: "#"
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.superfences 

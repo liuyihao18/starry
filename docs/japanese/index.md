@@ -8,4 +8,4 @@
 
 - [五十音](gojyuon.md)
 
-- [文法](bunpou.md)
+- [文法](bunpou/index.md)
