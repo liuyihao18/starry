@@ -19,6 +19,7 @@ nav:
       - 助词:
         - 格助词: 'japanese/bunpou/kakujyoshi.md'
         - 终助词: 'japanese/bunpou/shuujyoshi.md'
+        - 副助词: 'japanese/bunpou/fukujyoshi.md'
     - ごちうさ: 'japanese/gochiusa.md'
   - 知识分享: 
     - 'tutorials/index.md'

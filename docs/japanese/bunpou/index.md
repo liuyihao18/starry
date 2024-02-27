@@ -24,7 +24,7 @@
 
 - [终助词](shuujyoshi.md)
 
-- 副助词
+- [副助词](fukujyoshi.md)
 
 - 接续助词
 
