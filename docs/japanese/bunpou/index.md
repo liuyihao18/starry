@@ -26,7 +26,7 @@
 
 - [副助词](fukujyoshi.md)
 
-- 接续助词
+- [接续助词](setsuzokujyoshi.md)
 
 
 
