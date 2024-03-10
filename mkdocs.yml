@@ -27,6 +27,10 @@ nav:
         - 动词（第一）连用形: 'japanese/bunpou/doushi2.md' 
         - 动词（第二）连用形: 'japanese/bunpou/doushi3.md' 
         - 动词终止形: 'japanese/bunpou/doushi4.md'
+        - 动词连体形: 'japanese/bunpou/doushi5.md'
+        - 动词假定形: 'japanese/bunpou/doushi6.md'
+        - 动词命令形: 'japanese/bunpou/doushi7.md'
+        - 动词推量形: 'japanese/bunpou/doushi8.md'
     - ごちうさ: 'japanese/gochiusa.md'
   - 知识分享: 
     - 'tutorials/index.md'
