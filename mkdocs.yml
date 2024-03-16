@@ -16,26 +16,28 @@ nav:
     - 五十音: 'japanese/gojyuon.md'
     - 文法: 
       - 'japanese/bunpou/index.md'
-      - 动词: 
-        - 概述: 'japanese/bunpou/doushi.md'
-        - 动词未然形: 'japanese/bunpou/doushi1.md'  
-        - 动词（第一）连用形: 'japanese/bunpou/doushi2.md' 
-        - 动词（第二）连用形: 'japanese/bunpou/doushi3.md' 
-        - 动词终止形: 'japanese/bunpou/doushi4.md'
-        - 动词连体形: 'japanese/bunpou/doushi5.md'
-        - 动词假定形: 'japanese/bunpou/doushi6.md'
-        - 动词命令形: 'japanese/bunpou/doushi7.md'
-        - 动词推量形: 'japanese/bunpou/doushi8.md'
-        - 可能动词: 'japanese/bunpou/doushi9.md'
-        - 授受动词: 'japanese/bunpou/doushi10.md'
-        - 敬语动词: 'japanese/bunpou/doushi11.md'
-      - 形容词: 'japanese/bunpou/keiyoushi.md'
-      - 形容动词: 'japanese/bunpou/keiyoudoushi.md'
-      - 助词:
-        - 格助词: 'japanese/bunpou/kakujyoshi.md'
-        - 终助词: 'japanese/bunpou/shuujyoshi.md'
-        - 副助词: 'japanese/bunpou/fukujyoshi.md'
-        - 接续助词: 'japanese/bunpou/setsuzokujyoshi.md'
+      - 用言:
+        - 动词: 
+          - 概述: 'japanese/bunpou/doushi.md'
+          - 动词未然形: 'japanese/bunpou/doushi1.md'  
+          - 动词（第一）连用形: 'japanese/bunpou/doushi2.md' 
+          - 动词（第二）连用形: 'japanese/bunpou/doushi3.md' 
+          - 动词终止形: 'japanese/bunpou/doushi4.md'
+          - 动词连体形: 'japanese/bunpou/doushi5.md'
+          - 动词假定形: 'japanese/bunpou/doushi6.md'
+          - 动词命令形: 'japanese/bunpou/doushi7.md'
+          - 动词推量形: 'japanese/bunpou/doushi8.md'
+          - 可能动词: 'japanese/bunpou/doushi9.md'
+          - 授受动词: 'japanese/bunpou/doushi10.md'
+          - 敬语动词: 'japanese/bunpou/doushi11.md'
+        - 形容词: 'japanese/bunpou/keiyoushi.md'
+        - 形容动词: 'japanese/bunpou/keiyoudoushi.md'
+      - 附属词: 
+        - 助词:
+          - 格助词: 'japanese/bunpou/kakujyoshi.md'
+          - 终助词: 'japanese/bunpou/shuujyoshi.md'
+          - 副助词: 'japanese/bunpou/fukujyoshi.md'
+          - 接续助词: 'japanese/bunpou/setsuzokujyoshi.md'
     - ごちうさ: 'japanese/gochiusa.md'
   - 知识分享: 
     - 'tutorials/index.md'
