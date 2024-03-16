@@ -200,10 +200,11 @@
 <style>
 .tab-romaji th, .tab-romaji td {
     padding: 2px;
+    vertical-align: middle !important;
 }
 </style>
 
-<table class="tab-romaji" border="0" cellspacing="2px" cellpadding="2px" width="100%" style="
+<table class="tab-romaji" border="0" cellspacing="2px" cellpadding="2px"  width="100%" style="
     border-spacing: 2px;
     text-align: center;
     font-size: .75rem;

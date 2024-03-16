@@ -17,8 +17,9 @@ nav:
     - 文法: 
       - 'japanese/bunpou/index.md'
       - 体言:
-        - 数量词: 'japanese/bunpou/taigen1.md'
-        - 形式体言: 'japanese/bunpou/taigen2.md'
+        - 代词: 'japanese/bunpou/taigen1.md'
+        - 数量词: 'japanese/bunpou/taigen2.md'
+        - 形式体言: 'japanese/bunpou/taigen3.md'
       - 用言:
         - 动词: 
           - 概述: 'japanese/bunpou/doushi.md'
