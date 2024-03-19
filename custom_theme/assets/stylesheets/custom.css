@@ -1,13 +1,10 @@
 .circled-number {
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 1.1em;
     border: 1px solid var(--md-typeset-color);
     border-radius: 50%;
     text-align: center;
-    line-height: 16px;
-    font-size: 14px;
-    margin-left: 1px;
-    margin-right: 1px;
-    vertical-align: middle;
+    line-height: 1em;
+    font-size: .9em;
+    vertical-align: baseline;
 }
