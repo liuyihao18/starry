@@ -494,6 +494,8 @@
       
         
       
+        
+      
     
     
       
@@ -581,6 +583,27 @@
   
   <span class="md-ellipsis">
     形式体言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../japanese/bunpou/taigen4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用的体言
   </span>
   
 
@@ -1883,6 +1906,18 @@ y(t) = \sum_{i} A_i \cos(2 \pi f_i t)
 }
 </style>
 
+<script>
+function playSound(frequency) {
+  const audioContext = new AudioContext();
+  const oscillator = audioContext.createOscillator();
+  oscillator.type = 'sine';
+  oscillator.frequency.setValueAtTime(frequency, audioContext.currentTime);
+  oscillator.connect(audioContext.destination);
+  oscillator.start();
+  oscillator.stop(audioContext.currentTime + 0.3);
+}
+</script>
+
 <div class="piano">
   <div class="white-group">
     <div class="key white" onclick="playSound(261.626)"></div>
@@ -1901,18 +1936,6 @@ y(t) = \sum_{i} A_i \cos(2 \pi f_i t)
     <div class="key black" onclick="playSound(466.16)"></div>
   </div>
 </div>
-
-<script>
-function playSound(frequency) {
-  const audioContext = new AudioContext<span class="circled-number"></span>
-  const oscillator = audioContext.createOscillator<span class="circled-number"></span>
-  oscillator.type = 'sine';
-  oscillator.frequency.setValueAtTime(frequency, audioContext.currentTime);
-  oscillator.connect(audioContext.destination);
-  oscillator.start<span class="circled-number"></span>
-  oscillator.stop(audioContext.currentTime + 0.3);
-}
-</script>
 
 <p>找个谱子，然后每个音符播放对应的时长，我们程序员就成功演奏这首曲子啦！如果要音色的话，就给每个音符加高次谐波。下面放一些我演奏的曲子。</p>
 <h3 id="_7">相遇天使（天使に触れたよ）<a class="headerlink" href="#_7" title="Anchor link to this section for reference">#</a></h3>
