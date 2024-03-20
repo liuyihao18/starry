@@ -172,6 +172,18 @@ if __name__ == "__main__":
 }
 </style>
 
+<script>
+function playSound(frequency) {
+  const audioContext = new AudioContext();
+  const oscillator = audioContext.createOscillator();
+  oscillator.type = 'sine';
+  oscillator.frequency.setValueAtTime(frequency, audioContext.currentTime);
+  oscillator.connect(audioContext.destination);
+  oscillator.start();
+  oscillator.stop(audioContext.currentTime + 0.3);
+}
+</script>
+
 <div class="piano">
   <div class="white-group">
     <div class="key white" onclick="playSound(261.626)"></div>
@@ -190,18 +202,6 @@ if __name__ == "__main__":
     <div class="key black" onclick="playSound(466.16)"></div>
   </div>
 </div>
-
-<script>
-function playSound(frequency) {
-  const audioContext = new AudioContext();
-  const oscillator = audioContext.createOscillator();
-  oscillator.type = 'sine';
-  oscillator.frequency.setValueAtTime(frequency, audioContext.currentTime);
-  oscillator.connect(audioContext.destination);
-  oscillator.start();
-  oscillator.stop(audioContext.currentTime + 0.3);
-}
-</script>
 
 找个谱子，然后每个音符播放对应的时长，我们程序员就成功演奏这首曲子啦！如果要音色的话，就给每个音符加高次谐波。下面放一些我演奏的曲子。
 
