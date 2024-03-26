@@ -43,6 +43,9 @@ nav:
           - 终助词: 'japanese/bunpou/shuujyoshi.md'
           - 副助词: 'japanese/bunpou/fukujyoshi.md'
           - 接续助词: 'japanese/bunpou/setsuzokujyoshi.md'
+        - 助动词:
+          - 断定助动词: 'japanese/bunpou/jyodoushi1.md'
+          - 愿望助动词: 'japanese/bunpou/jyodoushi2.md'
     - ごちうさ: 'japanese/gochiusa.md'
   - 知识分享: 
     - 'tutorials/index.md'
