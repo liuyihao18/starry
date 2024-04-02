@@ -11,6 +11,7 @@ hide:
 网站内容包括但不限于：
 
 - [日本語の勉強](japanese/index.md)
+- [编程](program/index.md)
 - [知识分享](tutorials/index.md)
 - [小工具](tools/index.md)
 

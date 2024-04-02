@@ -6,13 +6,13 @@
 
 「[体{たい}言{げん}]」包括名词、代词、数词，然后还有一类特殊的形式体言。
 
-- [代词](taigen1.md)
+- [代词](taigen/taigen1.md)
 
-- [数量词](taigen2.md)
+- [数量词](taigen/taigen2.md)
 
-- [形式体言](taigen3.md)
+- [形式体言](taigen/taigen3.md)
 
-- [常用的体言](taigen4.md)
+- [常用的体言](taigen/taigen4.md)
 
 ## [用{よう}言{げん}]
 
@@ -24,45 +24,45 @@
 
 日语的动词按照语法作用可将其分为：
 
-- [他动词](doushi.md#1)
+- [他动词](doushi/index.md#1)
 
-- [自动词](doushi.md#2)
+- [自动词](doushi/index.md#2)
 
 按照活用形式可以分为四大类：
 
-- [五段动词](doushi.md#1_1)
+- [五段动词](doushi/index.md#1_1)
 
-- [一段动词](doushi.md#2_1)
+- [一段动词](doushi/index.md#2_1)
 
-- [サ变动词](doushi.md#3)
+- [サ变动词](doushi/index.md#3)
 
-- [カ变动词](doushi.md#4)
+- [カ变动词](doushi/index.md#4)
 
 动词的活用形式有：
 
-- [动词未然形](doushi1.md)
+- [动词未然形](doushi/doushi1.md)
 
-- [动词第一连用形（ます形）](doushi2.md)
+- [动词第一连用形（ます形）](doushi/doushi2.md)
 
-- [动词第二连用形（て形）](doushi3.md)
+- [动词第二连用形（て形）](doushi/doushi3.md)
 
-- [动词终止形](doushi4.md)
+- [动词终止形](doushi/doushi4.md)
 
-- [动词连体形](doushi5.md)
+- [动词连体形](doushi/doushi5.md)
 
-- [动词假定形](doushi6.md)
+- [动词假定形](doushi/doushi6.md)
 
-- [动词命令形](doushi7.md)
+- [动词命令形](doushi/doushi7.md)
 
-- [动词推量形](doushi8.md)
+- [动词推量形](doushi/doushi8.md)
 
 除此之外，还有一些特殊类型的动词，如：
 
-- [可能动词](doushi9.md)
+- [可能动词](doushi/doushi9.md)
 
-- [授受动词](doushi10.md)
+- [授受动词](doushi/doushi10.md)
 
-- [敬语动词](doushi11.md)
+- [敬语动词](doushi/doushi11.md)
 
 ### [形{けい}容{よう}詞{し}]
 
@@ -84,13 +84,13 @@
 
 助词是一类没有活用形式的附属词。
 
-- [格助词](kakujyoshi.md)
+- [格助词](jyoushi/kakujyoshi.md)
 
-- [终助词](shuujyoshi.md)
+- [终助词](jyoushi/shuujyoshi.md)
 
-- [副助词](fukujyoshi.md)
+- [副助词](jyoushi/fukujyoshi.md)
 
-- [接续助词](setsuzokujyoshi.md)
+- [接续助词](jyoushi/setsuzokujyoshi.md)
 
 ### [助{じょ}動{どう}詞{し}]
 
@@ -102,15 +102,15 @@
 
 日语结句有敬体与简体之分，与使用场合、说话人的亲疏关系等有关。
 
-- [敬体与简体](buntai1.md)
+- [敬体与简体](buntai/buntai1.md)
 
 最后我把一些接头词、接尾词和其他放在这里：
 
-- [接头词](buntai2.md)
+- [接头词](buntai/buntai2.md)
 
-- [接尾词](buntai3.md)
+- [接尾词](buntai/buntai3.md)
 
-- [其他](buntai4.md)
+- [其他](buntai/buntai4.md)
 
 
 
