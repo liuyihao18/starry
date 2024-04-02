@@ -56,7 +56,7 @@ nav:
       - 'program/haskell/index.md'
       - IO模块: 'program/haskell/io.md'
       - 队列: 'program/haskell/queue.md'
-      - 栈: 'program/haskell/queue.md'
+      - 栈: 'program/haskell/stack.md'
       - 树: 'program/haskell/tree.md'
   - 知识分享: 
     - 'tutorials/index.md'
