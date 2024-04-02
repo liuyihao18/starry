@@ -44,6 +44,11 @@ nav:
           - 副助词: 'japanese/bunpou/fukujyoshi.md'
           - 接续助词: 'japanese/bunpou/setsuzokujyoshi.md'
         - 助动词: 'japanese/bunpou/jyodoushi.md'
+      - 文体: 
+        - 敬体与简体: 'japanese/bunpou/buntai1.md'
+        - 接头词: 'japanese/bunpou/buntai2.md'
+        - 接尾词: 'japanese/bunpou/buntai3.md'
+        - 其他: 'japanese/bunpou/buntai4.md'
     - ごちうさ: 'japanese/gochiusa.md'
   - 知识分享: 
     - 'tutorials/index.md'
