@@ -24,19 +24,19 @@
 
 日语的动词按照语法作用可将其分为：
 
-- [他动词](doushi/index.md#1)
+- [他动词](doushi/doushi.md#1)
 
-- [自动词](doushi/index.md#2)
+- [自动词](doushi/doushi.md#2)
 
 按照活用形式可以分为四大类：
 
-- [五段动词](doushi/index.md#1_1)
+- [五段动词](doushi/doushi.md#1_1)
 
-- [一段动词](doushi/index.md#2_1)
+- [一段动词](doushi/doushi.md#2_1)
 
-- [サ变动词](doushi/index.md#3)
+- [サ变动词](doushi/doushi.md#3)
 
-- [カ变动词](doushi/index.md#4)
+- [カ变动词](doushi/doushi.md#4)
 
 动词的活用形式有：
 

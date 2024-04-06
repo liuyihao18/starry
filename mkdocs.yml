@@ -13,9 +13,10 @@ nav:
   - 主页: 'index.md'
   - 日本語の勉強:
     - 'japanese/index.md'
-    - 五十音: 'japanese/gojyuon.md'
-    - 文法: 
-      - 'japanese/bunpou/index.md'
+    - 五十音: 
+      - 五十音: 'japanese/gojyuon/index.md'
+    - 语法: 
+      - 语法: 'japanese/bunpou/index.md'
       - 体言:
         - 代词: 'japanese/bunpou/taigen/taigen1.md'
         - 数量词: 'japanese/bunpou/taigen/taigen2.md'
@@ -23,7 +24,7 @@ nav:
         - 常用的体言: 'japanese/bunpou/taigen/taigen4.md'
       - 用言:
         - 动词: 
-          - 概述: 'japanese/bunpou/doushi/index.md'
+          - 概述: 'japanese/bunpou/doushi/doushi.md'
           - 动词未然形: 'japanese/bunpou/doushi/doushi1.md'  
           - 动词（第一）连用形: 'japanese/bunpou/doushi/doushi2.md' 
           - 动词（第二）连用形: 'japanese/bunpou/doushi/doushi3.md' 
@@ -49,7 +50,11 @@ nav:
         - 接头词: 'japanese/bunpou/buntai/buntai2.md'
         - 接尾词: 'japanese/bunpou/buntai/buntai3.md'
         - 其他: 'japanese/bunpou/buntai/buntai4.md'
-    - ごちうさ: 'japanese/gochiusa.md'
+    - 句型: 
+      - 句型: 'japanese/bunkei/index.md'
+      - あ行: 'japanese/bunkei/a.md'
+    - ごちうさ: 
+      - 点兔: 'japanese/gochiusa/index.md'
   - 编程:
     - 'program/index.md'
     - Haskell: 

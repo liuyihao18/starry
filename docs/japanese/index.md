@@ -6,6 +6,8 @@
 
 > 内容主要参考《新世纪日本语教程》与维基百科。
 
-- [五十音](gojyuon.md)
+- [五十音](gojyuon/index.md)
 
-- [文法](bunpou/index.md)
+- [语法](bunpou/index.md)
+
+- [句型](bunkei/index.md)
