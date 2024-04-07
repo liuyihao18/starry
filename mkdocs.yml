@@ -52,6 +52,7 @@ nav:
         - 其他: 'japanese/bunpou/buntai/buntai4.md'
     - 句型: 
       - 句型: 'japanese/bunkei/index.md'
+      - 一般句型: 'japanese/bunkei/1.md'
       - あ行: 'japanese/bunkei/a.md'
     - ごちうさ: 
       - 点兔: 'japanese/gochiusa/index.md'
