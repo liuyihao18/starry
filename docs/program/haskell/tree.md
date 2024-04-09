@@ -76,6 +76,6 @@ _toList queue = case Q.view queue of
 
 源代码：
 
-- [`util.hs`](src/util.hs)
-
 - [`tree.hs`](src/tree.hs)
+
+- [`util.hs`](src/util.hs)

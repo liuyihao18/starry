@@ -6,9 +6,19 @@ Haskell函数式编程语言，简洁、纯净、优美，宛如灵魂上的洗�
 
 贴上官方的安装教程和参考资料：
 
-> GHCup安装：[https://www.haskell.org/ghcup/](https://www.haskell.org/ghcup/)
+- GHCup安装：[https://www.haskell.org/ghcup/](https://www.haskell.org/ghcup/)
 
-> CIS194教程：[https://www.seas.upenn.edu/~cis1940/spring13/](https://www.seas.upenn.edu/~cis1940/spring13/)
+- CIS194课程：[https://www.seas.upenn.edu/~cis1940/spring13/](https://www.seas.upenn.edu/~cis1940/spring13/)
+
+再附上Haskell脚本的基本运行方法：
+
+- 直接运行Haskell脚本：`runhaskell *.hs`
+
+- 使用GHCi交互运行：`ghci`
+
+    - `:l`：加载模块
+
+    - `:q`：退出
 
 我在这里的写的Haskell代码主要是针对LeetCode上的一些题目，我怎么就不能用一种没有循环和变量的的语言来做算法题？！
 
@@ -19,3 +29,5 @@ Haskell函数式编程语言，简洁、纯净、优美，宛如灵魂上的洗�
 - [栈](stack.md)
 
 - [树](tree.md)
+
+- [2529. 正整数和负整数的最大计数](leetcode/2529.md)

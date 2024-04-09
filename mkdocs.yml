@@ -64,6 +64,8 @@ nav:
       - 队列: 'program/haskell/queue.md'
       - 栈: 'program/haskell/stack.md'
       - 树: 'program/haskell/tree.md'
+      - LeetCode:
+        - 2529: 'program/haskell/leetcode/2529.md'
   - 知识分享: 
     - 'tutorials/index.md'
     - SSH密钥的使用: 'tutorials/ssh_keys.md'
