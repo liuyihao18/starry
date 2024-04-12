@@ -53,6 +53,8 @@ nav:
     - 句型: 
       - 句型: 'japanese/bunkei/index.md'
       - 一般句型: 'japanese/bunkei/1.md'
+      - 比较句型: 'japanese/bunkei/2.md'
+      - 敬语句型: 'japanese/bunkei/3.md'
       - あ行: 'japanese/bunkei/a.md'
     - ごちうさ: 
       - 点兔: 'japanese/gochiusa/index.md'
