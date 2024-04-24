@@ -57,6 +57,7 @@ nav:
       - 敬语句型: 'japanese/bunkei/3.md'
       - 五十音分类: 
         - あ行: 'japanese/bunkei/a.md'
+        - か行: 'japanese/bunkei/ka.md'
     - ごちうさ: 
       - 点兔: 'japanese/gochiusa/index.md'
   - 编程:
