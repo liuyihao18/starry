@@ -58,6 +58,8 @@ nav:
       - 五十音分类: 
         - あ行: 'japanese/bunkei/a.md'
         - か行: 'japanese/bunkei/ka.md'
+        - さ行: 'japanese/bunkei/sa.md'
+        - た行: 'japanese/bunkei/ta.md'
     - ごちうさ: 
       - 点兔: 'japanese/gochiusa/index.md'
   - 编程:
