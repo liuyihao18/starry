@@ -80,6 +80,9 @@ nav:
     - 'tools/index.md'
     - 抽签: 'tools/draw.md'
     - 今天吃什么食堂: 'tools/canteen.md'
+  - 图库:
+    - 'images/index.md'
+    - 少女乐队哭泣: 'images/gbc/index.md'
 
 # Markdown
 markdown_extensions:

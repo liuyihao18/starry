@@ -14,6 +14,7 @@ hide:
 - [编程](program/index.md)
 - [知识分享](tutorials/index.md)
 - [小工具](tools/index.md)
+- [图库](images/index.md)
 
 在此与大家共勉！
 
