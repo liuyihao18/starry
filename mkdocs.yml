@@ -60,6 +60,10 @@ nav:
         - か行: 'japanese/bunkei/ka.md'
         - さ行: 'japanese/bunkei/sa.md'
         - た行: 'japanese/bunkei/ta.md'
+        - な行: 'japanese/bunkei/na.md'
+        - は行: 'japanese/bunkei/ha.md'
+        - ま行: 'japanese/bunkei/ma.md'
+        - や行: 'japanese/bunkei/ya.md'
     - ごちうさ: 
       - 点兔: 'japanese/gochiusa/index.md'
   - 编程:
