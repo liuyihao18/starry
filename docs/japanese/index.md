@@ -11,3 +11,5 @@
 - [语法](bunpou/index.md)
 
 - [句型](bunkei/index.md)
+
+- [歌词](kashi/index.md)

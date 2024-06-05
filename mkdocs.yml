@@ -64,6 +64,10 @@ nav:
         - は行: 'japanese/bunkei/ha.md'
         - ま行: 'japanese/bunkei/ma.md'
         - や行: 'japanese/bunkei/ya.md'
+    - 歌词:
+      - 歌词: 'japanese/kashi/index.md'
+      - secret base ～君がくれたもの～: 'japanese/kashi/secret_base.md'
+      - song for you: 'japanese/kashi/song_for_you.md'
     - ごちうさ: 
       - 点兔: 'japanese/gochiusa/index.md'
   - 编程:
