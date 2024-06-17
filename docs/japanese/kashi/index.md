@@ -12,3 +12,6 @@
 
 - [あの星の向こうに](anohoshinomukouni.md)
 
+- [色違い翼](irochigaitsubasa.md)
+
+- [おかえり](okaeri.md)
