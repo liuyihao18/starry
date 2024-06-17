@@ -8,3 +8,7 @@
 
 - [song for you](song_for_you.md)
 
+- [アイマイモコ](aimaimoko.md)
+
+- [あの星の向こうに](anohoshinomukouni.md)
+
