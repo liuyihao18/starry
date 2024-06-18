@@ -15,3 +15,7 @@
 - [色違い翼](irochigaitsubasa.md)
 
 - [おかえり](okaeri.md)
+
+- [終わらない歌](owaranaiuta.md)
+
+- [光るなら](hikarunara.md)
