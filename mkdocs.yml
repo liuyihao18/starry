@@ -66,14 +66,18 @@ nav:
         - や行: 'japanese/bunkei/ya.md'
     - 歌词:
       - 歌词: 'japanese/kashi/index.md'
-      - secret base ～君がくれたもの～: 'japanese/kashi/secret_base.md'
-      - song for you: 'japanese/kashi/song_for_you.md'
-      - アイマイモコ: 'japanese/kashi/aimaimoko.md'
-      - あの星の向こうに: 'japanese/kashi/anohoshinomukouni.md'
-      - 色違い翼: 'japanese/kashi/irochigaitsubasa.md'
-      - おかえり: 'japanese/kashi/okaeri.md'
-      - 光るなら: 'japanese/kashi/hikarunara.md'
-      - 終わらない歌: 'japanese/kashi/owaranaiuta.md'
+      - 收藏夹: 
+        - secret base: 'japanese/kashi/secret_base.md'
+        - song for you: 'japanese/kashi/song_for_you.md'
+        - アイマイモコ: 'japanese/kashi/aimaimoko.md'
+        - あの星の向こうに: 'japanese/kashi/anohoshinomukouni.md'
+        - 色違い翼: 'japanese/kashi/irochigaitsubasa.md'
+        - おかえり: 'japanese/kashi/okaeri.md'
+        - 終わらない歌: 'japanese/kashi/owaranaiuta.md'
+        - 木もれび青春譜: 'japanese/kashi/komorebiseishunfu.md'
+        - ここから、ここから: 'japanese/kashi/kokokara.md'
+        - ココロソマリ: 'japanese/kashi/kokorosomari.md'
+        - 光るなら: 'japanese/kashi/hikarunara.md'
     - ごちうさ: 
       - 点兔: 'japanese/gochiusa/index.md'
   - 编程:

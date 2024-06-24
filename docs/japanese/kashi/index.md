@@ -18,4 +18,10 @@
 
 - [終わらない歌](owaranaiuta.md)
 
+- [木もれび青春譜](komorebiseishunfu.md)
+
+- [ここから、ここから](kokokara.md)
+
+- [ココロソマリ](kokorosomari.md)
+
 - [光るなら](hikarunara.md)
