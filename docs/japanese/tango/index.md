@@ -6,4 +6,6 @@
 
 - [亲属、朋友和熟人](ningen/ningen1.md)
 
+- [人的性格和特征](ningen/ningen2.md)
+
 
