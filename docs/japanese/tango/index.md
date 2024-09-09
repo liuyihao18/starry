@@ -8,4 +8,8 @@
 
 - [人的性格和特征](ningen/ningen2.md)
 
+- [对他人的感情和行动](ningen/ningen3.md)
 
+## 二、生活
+
+- [吃食](seikatsu/seikatsu1.md)
