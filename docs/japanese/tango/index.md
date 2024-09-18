@@ -13,3 +13,4 @@
 ## 二、生活
 
 - [吃食](seikatsu/seikatsu1.md)
+
