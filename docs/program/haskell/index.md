@@ -30,4 +30,4 @@ Haskell函数式编程语言，简洁、纯净、优美，宛如灵魂上的洗�
 
 - [树](tree.md)
 
-- [2529. 正整数和负整数的最大计数](leetcode/2529.md)
+- [LeetCode](leetcode/index.md)

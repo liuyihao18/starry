@@ -1,6 +1,6 @@
 # Site Settings
 site_name: 微风拂过之处
-site_url: https://liuyihao18.github.io/starry/
+site_url: https://www.liuyihao.top/starry/
 site_author: 刘怡豪
 
 # Watch Settings
@@ -21,7 +21,8 @@ nav:
         - 对他人的感情和行动: 'japanese/tango/ningen/ningen3.md'
       - 生活:
         - 吃食: 'japanese/tango/seikatsu/seikatsu1.md'
-        - 家事: 'japanese/tango/seikatsu/seikatsu2.md'
+        - 家务: 'japanese/tango/seikatsu/seikatsu2.md'
+        - 健康: 'japanese/tango/seikatsu/seikatsu3.md'
     - 五十音: 
       - 五十音: 'japanese/gojyuon/index.md'
     - 语法: 
@@ -110,6 +111,7 @@ nav:
       - 栈: 'program/haskell/stack.md'
       - 树: 'program/haskell/tree.md'
       - LeetCode:
+        - 'program/haskell/leetcode/index.md'
         - 2529: 'program/haskell/leetcode/2529.md'
   - 知识分享: 
     - 'tutorials/index.md'
