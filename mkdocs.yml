@@ -202,6 +202,6 @@ plugins:
 # Extra Parameters
 extra:
   homepage: '../'
-  generator: false,
+  generator: false
   edit_uri_text: "在 GitHub 上编辑此页面"
 
