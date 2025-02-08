@@ -6,9 +6,9 @@
 
 > 内容主要参考《新世纪日本语教程》、《完全掌握日语能力考试》与维基百科等资料。
 
-- [单词](tango/index.md)
+- [五十音](gojyuuon/index.md)
 
-- [五十音](gojyuon/index.md)
+- [单词](tango/index.md)
 
 - [语法](bunpou/index.md)
 
