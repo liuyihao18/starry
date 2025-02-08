@@ -195,13 +195,14 @@ theme:
 
 # Plugins
 plugins:
+  - search
   - git-revision-date-localized:
       enable_creation_date: true  # 显示创建时间
       type: timeago               # 仅显示多久前
+      timezone: Asia/Shanghai     # 设置时区
 
 # Extra Parameters
 extra:
   homepage: '../'
   generator: false
   edit_uri_text: "在 GitHub 上编辑此页面"
-
