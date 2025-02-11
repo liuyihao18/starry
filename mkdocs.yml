@@ -125,6 +125,7 @@ nav:
     - 'tutorials/index.md'
     - SSH密钥的使用: 'tutorials/ssh_keys.md'
     - 程序员演奏音乐: 'tutorials/music.md'
+    - 傅里叶分析: 'tutorials/fft.md'
   - 小工具: 
     - 'tools/index.md'
     - 抽签: 'tools/draw.md'

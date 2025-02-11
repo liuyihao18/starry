@@ -3,7 +3,7 @@ import re
 from mkdocs.structure.toc import AnchorLink
 
 # 定义正则表达式模式
-pattern = r'\[(.*?{.*?}.*?)\]'
+pattern = r'\[([^\]]*?{[^\]]*?}[^\]]*?)\]'
 subpattern = r'(.*?){(.*?)}'
 accent_pattern = r'\((\d+?)\);'
 toc_pattern = r'\(.*?\)'
