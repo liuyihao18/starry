@@ -11,11 +11,11 @@ hide:
 
 网站内容包括但不限于：
 
-- [日本語の勉強](japanese/index.md)
-- [编程](program/index.md)
 - [知识分享](tutorials/index.md)
+- [编程经验](program/index.md)
 - [小工具](tools/index.md)
 - [图库](images/index.md)
+- [日本語の勉強](japanese/index.md)
 
 在此与大家共勉！
 
