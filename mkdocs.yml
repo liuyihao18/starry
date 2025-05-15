@@ -21,6 +21,9 @@ nav:
   - 主页: 'index.md'
   - 知识分享: 
     - 'tutorials/index.md'
+    - UE5:
+      - 'tutorials/UE5/index.md'
+      - 虚幻商城: 'tutorials/UE5/fab.md'
     - SSH密钥的使用: 'tutorials/ssh_keys.md'
     - 程序员演奏音乐: 'tutorials/music.md'
     - 傅里叶分析: 'tutorials/fft.md'
