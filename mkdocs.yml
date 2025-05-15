@@ -24,6 +24,7 @@ nav:
     - UE5:
       - 'tutorials/UE5/index.md'
       - 虚幻商城: 'tutorials/UE5/fab.md'
+    - 简历求职: 'tutorials/resume.md'
     - SSH密钥的使用: 'tutorials/ssh_keys.md'
     - 程序员演奏音乐: 'tutorials/music.md'
     - 傅里叶分析: 'tutorials/fft.md'
